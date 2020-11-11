@@ -1,0 +1,72 @@
+
+.sortContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 280px 280px;
+    grid-template-areas: 'reset sort' 'quick heap' 'bubble merge';
+    justify-content: center;
+    align-items: center;
+}
+
+.resetDad {
+    grid-area: reset;
+}
+
+.button1Style {
+    display: block;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 30%;
+    width: 60px;
+    height: 20px;
+    float: right;
+    margin-right: 20px;
+}
+
+.sortDad {
+    grid-area: sort;
+}
+
+.button2Style {
+    display: block;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 30%;
+    width: 60px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 1100px) {
+    .sortContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px 30px 280px 280px 280px 280px;
+        grid-template-areas: 'reset' 'sort' 'quick' 'heap' 'bubble' 'merge';
+    }
+
+    .resetDad {
+        display: block;
+    }
+
+    .button1Style {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .sortDad {
+        display: block;
+    }
+
+    .button2Style {
+        margin: 0 auto;
+        float: none;
+    }
+}

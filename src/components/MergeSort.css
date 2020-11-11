@@ -1,0 +1,7 @@
+.array-bar {
+    width: 8px;
+    margin: 0px 2px;
+    background-color: blue;
+    display: inline-block;
+    border: none;
+}
